@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flags Quiz</title>
+    <!-- JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- my CSS-->
+    <link rel="stylesheet" href="flagStyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class='col-md-1'></div>
+            <div id="africa" class='col-md-2 continent'>Africa</div>
+            <div id="americas" class='col-md-2 continent'>Americas</div>
+            <div id="asia" class='col-md-2 continent'>Asia</div>
+            <div id="europe" class='col-md-2 continent'>Europe</div>
+            <div id="oceania" class='col-md-2 continent'>Oceania</div>
+            <div class='col-md-1'></div>
+        </div>
+        <div class="row modes">
+            <div class="col-md-1"></div>
+            <div id="mode1" class="col-md-3 mode" data-value="1">Easy</div>
+            <div id="mode2" class="col-md-3 mode" data-value="2">Hard</div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div id="1" class="col-md-3 info"></div>
+            <div id="2" class="col-md-3 info"></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div id="question" class="col-md-8" style="text-align: center"></div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div id="flagPosition" class="col-md-12"></div>
+        </div>
+        <div id="buttonsPlace">
+        </div>
+    </div>
+    <script src="flagScript.js"></script>
+</body>
+</html>
