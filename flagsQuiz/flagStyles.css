@@ -1,0 +1,29 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+*{
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+body{
+  background-color: rgb(233, 233, 233);
+}
+img{
+  max-height: 40rem;
+  width: 60%;
+}
+.mode, .continent, .button{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#flagPosition{
+  margin:20px 0px 40px 0px;
+  text-align: center;
+}

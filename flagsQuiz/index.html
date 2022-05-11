@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flags Quiz</title>
+  <!-- JQuery-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- my CSS-->
+  <link rel="stylesheet" href="flagStyles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="checkboxDiv" class="custom-control custom-checkbox" hidden>
+      <input type="checkbox" class="custom-control-input" id="checkbox">
+      <label class="custom-control-label" for="checkbox">Remember settings</label>
+    </div>
+    <div class="row continents"><!-- continent buttons -->
+      <div class='col-md-2 col-md-offset-1'>
+        <button id="africa" class='btn btn-primary btn-md btn-block continent'>Africa</button>
+      </div>
+      <div class='col-md-2'>
+        <button id="americas" class='btn btn-primary btn-md btn-block continent'>Americas</button>
+      </div>
+      <div class='col-md-2'>
+        <button id="asia" class='btn btn-primary btn-md btn-block continent'>Asia</button>
+      </div>
+      <div class='col-md-2'>
+        <button id="europe" class='btn btn-primary btn-md btn-block continent'>Europe</button>
+      </div>
+      <div class='col-md-2'>
+        <button id="oceania" class='btn btn-primary btn-md btn-block continent'>Oceania</button>
+      </div>
+    </div>
+    <div class="row modes collapse"><!-- difficulty mode buttons -->
+      <div class="col-md-5 col-md-offset-1">
+        <button id="mode1" class='btn btn-primary btn-md btn-block mode' data-value="2">Easy</button>
+      </div>
+      <div class="col-md-5">
+        <button id="mode2" class='btn btn-primary btn-md btn-block mode' data-value="4">Hard</button>
+      </div>
+    </div>
+    <div class="row"><!-- "Question x out of y" goes here -->
+      <div id="question" style="text-align: center"></div>
+    </div>
+    <div id="flagPosition" class="row"></div><!-- flag img goes here -->
+    <div id="buttonsPlace" class="row"></div><!-- choice buttons go here -->
+  </div>
+  <script src="flagScript.js"></script>
+</body>
+</html>
